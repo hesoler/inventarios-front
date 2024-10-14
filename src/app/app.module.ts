@@ -8,13 +8,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductoListaComponent } from './producto-lista/producto-lista.component'
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms'
+import { EditarProductoComponent } from './editar-producto/editar-producto.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     AgregarProductoComponent,
     PageNotFoundComponent,
-    ProductoListaComponent
+    ProductoListaComponent,
+    EditarProductoComponent
   ],
   imports: [
     BrowserModule,

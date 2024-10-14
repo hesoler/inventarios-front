@@ -10,6 +10,7 @@
         <th scope="col">Descripción de producto</th>
         <th scope="col">Existencias</th>
         <th scope="col">Precio</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,11 @@
         <td>{{producto.descripcion}}</td>
         <td>{{producto.existencia}}</td>
         <td>{{producto.precio}}</td>
+        <td class="text-center">
+          <button type="button"
+                  (click)="editarProducto(producto.idProducto)"
+                  class="btn btn-warning btn-sm me-3">Editar</button>
+        </td>
       </tr>
     </tbody>
   </table>
