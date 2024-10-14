@@ -31,4 +31,13 @@ export class ProductoListaComponent implements OnInit {
   editarProducto (id: number) {
     this.enrutador.navigate(['editar-producto', id])
   }
+
+  eliminarProducto (id: number) {
+    this.productoServicio.eliminarProducto(id).subscribe(
+      {
+        next: (data) => { this.obtenerProductos() },
+        error: (errors) => { console.log(errors) }
+      }
+    )
+  }
 }
